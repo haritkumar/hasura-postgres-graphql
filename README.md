@@ -23,14 +23,6 @@ CONTAINER ID        IMAGE                          COMMAND                  CREA
 
 ```
 
-- Stop docker-compose
-  
-Stop the server that was launched by docker compose up via Ctrl-C, then remove the containers via:
-
-```bash
-$ docker-compose down
-```
-
 ### `Northwind` sample database
 Database contains the sales data for Northwind Traders, a fictitious specialty foods export-import company.
 
@@ -104,4 +96,12 @@ query MyQuery {
     ]
   }
 }
+```
+
+### Stop docker-compose
+  
+Stop the server that was launched by docker compose up via Ctrl-C, then remove the containers via:
+
+```bash
+$ docker-compose down
 ```
