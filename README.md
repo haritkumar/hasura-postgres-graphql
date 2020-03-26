@@ -1,6 +1,6 @@
 ## Hasura GraphQL engine
 
-Hasura is an open source engine that connects to your databases & microservices and auto-generates a production-ready GraphQL backend
+Hasura is an open source engine that connects to your databases & microservices and auto-generates a production-ready GraphQL backend.
 
 <img src=pics/hasura.png />
 
@@ -17,7 +17,7 @@ CONTAINER ID        IMAGE                          COMMAND                  CREA
 
 ```
 
-` Stop docker-compose
+- Stop docker-compose
 Stop the server that was launched by docker compose up via Ctrl-C, then remove the containers via:
 
 ```bash
@@ -30,25 +30,24 @@ Database contains the sales data for Northwind Traders, a fictitious specialty f
 <img src=pics/ER.png />
 
 ### Adminer
-Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP.
+Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP. We will use it for postgres db management.
 
-`http://localhost:8082/`
+Access here: `http://localhost:8082/`
 
 <img src=pics/adminer.png />
 
 <img src=pics/adminer_home.png />
 
 ### Hasura console
-`http://localhost:8080/console`
+Access here: `http://localhost:8080/console`
 
-
-- GraphQL Query
-  
 <img src=pics/hasura_login.png />
 
 <img src=pics/hasura_home.png />
 
-```json
+- GraphQL Query
+  
+```graphql
 query MyQuery {
   products(where: {supplier: {city: {_eq: "Tokyo"}}}) {
     category_id
