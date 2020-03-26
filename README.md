@@ -31,14 +31,14 @@ Database contains the sales data for Northwind Traders, a fictitious specialty f
 ### Adminer
 Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP. We will use it for postgres db management.
 
-Access here: `http://localhost:8082/`
+Access here: `http://localhost:8082/` . Use password 'admin'
 
 <img src=pics/adminer.png />
 
 <img src=pics/adminer_home.png />
 
 ### Hasura console
-Access here: `http://localhost:8080/console`
+Access here: `http://localhost:8080/console` Use password 'hasura_admin'
 
 <img src=pics/hasura_login.png />
 
