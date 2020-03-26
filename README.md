@@ -7,6 +7,12 @@ Hasura is an open source engine that connects to your databases & microservices 
 ### Run Hasura GraphQL engine & Postgres
 ```bash
 $ docker-compose up
+
+Creating network "hasura-postgre-graphql_default" with the default driver
+Creating hasura-postgre-graphql_postgres_1 ... done
+Creating hasura-postgre-graphql_adminer_1        ... done
+Creating hasura-postgre-graphql_graphql-engine_1 ... done
+
 #Check if the containers are running
 $ docker ps
 
@@ -18,10 +24,11 @@ CONTAINER ID        IMAGE                          COMMAND                  CREA
 ```
 
 - Stop docker-compose
+  
 Stop the server that was launched by docker compose up via Ctrl-C, then remove the containers via:
 
 ```bash
-docker-compose down
+$ docker-compose down
 ```
 
 ### `Northwind` sample database
